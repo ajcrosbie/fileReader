@@ -1,1 +1,1 @@
-"# fileReader" 
+reads file and finds average
