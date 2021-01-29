@@ -9,6 +9,7 @@ public class writer {
             for (int i = 0; i < 5; i++) {
                 int x = generateRandom();
                 F.write(new Integer(x).toString());
+                F.write("\r");
             }
             F.close();
         } catch (IOException e) {
