@@ -9,7 +9,7 @@ public class reader {
         try {
             File ob = new File("File.txt");
             Scanner reader1 = new Scanner(ob);
-            while (reader1.hasNextLine()) {
+            while (reader1.hasNextInt()) {
                 int ci = reader1.nextInt();
                 count = count + 1;
                 g = ci + g;

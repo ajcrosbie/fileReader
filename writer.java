@@ -6,7 +6,7 @@ public class writer {
     public static void main(String[] args) {
         try {
             FileWriter F = new FileWriter("File.txt");
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 100; i++) {
                 int x = generateRandom();
                 F.write(new Integer(x).toString());
                 F.write("\r");
