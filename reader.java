@@ -40,4 +40,25 @@ public class reader {
         }
         return nums;
     }
+
+    public static int FindAverage(String file) {
+        int g = 0;
+        int count = 0;
+        try {
+            File ob = new File(file);
+            Scanner reader1 = new Scanner(ob);
+            while (reader1.hasNextInt()) {
+                int ci = reader1.nextInt();
+                count = count + 1;
+                g = ci + g;
+            }
+            g = g / count;
+            reader1.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("an error occurred");
+            e.printStackTrace();
+        }
+        return g;
+
+    }
 }

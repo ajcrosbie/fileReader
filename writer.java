@@ -38,4 +38,19 @@ public class writer {
             e.printStackTrace();
         }
     }
+
+    public static void writeRand(String file) {
+        try {
+            FileWriter F = new FileWriter(file);
+            for (int i = 0; i < 100; i++) {
+                int x = generateRandom();
+                F.write(new Integer(x).toString());
+                F.write("\r");
+            }
+            F.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
 }
