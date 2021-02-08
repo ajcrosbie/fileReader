@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class reader {
@@ -22,5 +23,21 @@ public class reader {
         }
         System.out.println(g);
 
+    }
+
+    public static ArrayList<Integer> createList(String file) {
+        ArrayList<Integer> nums = new ArrayList<Integer>();
+        try {
+            File file1 = new File(file);
+            Scanner reader1 = new Scanner(file1);
+
+            while (reader1.hasNextInt()) {
+                nums.add(reader1.nextInt());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("an error occurred");
+            e.printStackTrace();
+        }
+        return nums;
     }
 }
