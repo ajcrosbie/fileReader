@@ -1,3 +1,7 @@
+package read_write;
+
+import read_write.*;
+
 import java.awt.GridLayout;
 import javax.swing.BorderFactory;
 import java.awt.BorderLayout;
@@ -5,7 +9,6 @@ import java.util.ArrayList;
 
 import java.awt.event.*;
 import java.io.IOException;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;

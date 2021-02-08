@@ -1,3 +1,7 @@
+package read_write;
+
+import read_write.reader;
+import read_write.writer;
 import java.util.ArrayList;
 
 public class Sorter {
@@ -25,7 +29,7 @@ public class Sorter {
                     v = v + 1;
                     if (v == nums.size() - 2) {
                         h = h + 1;
-                        if (h == 10) {
+                        if (h == 30) {
                             c = false;
                         }
                     }
